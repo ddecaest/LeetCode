@@ -1,11 +1,11 @@
 fun main(args: Array<String>) {
     val test = arrayOf("flower", "flow", "flowery", "flightery", "flight")
-    println(Solution.longestCommonPrefix(test))
+    println(LongestCommonPrefix.execute(test))
 }
 
-object Solution {
+object LongestCommonPrefix {
 
-    fun longestCommonPrefix(strs: Array<String>): String {
+    fun execute(strs: Array<String>): String {
         strs.sort()
 
         val first = strs[0]
